@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- @include head.html -->
+  <title>Why we build startup apps in Flutter (and when we don&#x27;t) | Shotlin Blog</title>
+  <meta name="description" content="One codebase, two app stores, native speed. How Flutter helps startups launch faster on Android and iOS — and the cases where we pick something else." />
+  <link rel="canonical" href="https://shotlin.in/blog/why-we-build-startup-apps-in-flutter/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://shotlin.in/blog/why-we-build-startup-apps-in-flutter/" />
+  <meta property="og:title" content="Why we build startup apps in Flutter (and when we don&#x27;t) | Shotlin Blog" />
+  <meta property="og:description" content="One codebase, two app stores, native speed. How Flutter helps startups launch faster on Android and iOS — and the cases where we pick something else." />
+  <meta property="og:image" content="https://shotlin.in/img/blog/why-we-build-startup-apps-in-flutter.webp" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://shotlin.in/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://shotlin.in/blog/"}, {"@type": "ListItem", "position": 3, "name": "Why We Build Startup Apps In Flutter", "item": "https://shotlin.in/blog/why-we-build-startup-apps-in-flutter/"}]}, {"@type": "BlogPosting", "headline": "Why we build startup apps in Flutter (and when we don't)", "description": "One codebase, two app stores, native speed. How Flutter helps startups launch faster on Android and iOS — and the cases where we pick something else.", "image": "https://shotlin.in/img/blog/why-we-build-startup-apps-in-flutter.webp", "datePublished": "2026-11-15", "dateModified": "2026-11-15", "author": [{"@type": "Person", "name": "Sayan Mondal", "url": "https://www.sayanthecoder.in/"}, {"@type": "Person", "name": "Souvik", "url": "https://souvikthecoder.in/"}], "publisher": {"@type": "Organization", "name": "Shotlin", "url": "https://shotlin.in/", "logo": {"@type": "ImageObject", "url": "https://shotlin.in/favicon.svg"}}, "mainEntityOfPage": "https://shotlin.in/blog/why-we-build-startup-apps-in-flutter/", "articleSection": "Engineering", "keywords": "Engineering"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Flutter good for startups?", "acceptedAnswer": {"@type": "Answer", "text": "For most product apps, yes. One codebase for Android and iOS speeds up launch and keeps maintenance lean."}}, {"@type": "Question", "name": "Can a Flutter app handle payments, maps and push notifications?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Our Flutter apps use UPI and card payments, live maps, push notifications and WhatsApp integrations."}}, {"@type": "Question", "name": "Will a Flutter app feel native?", "acceptedAnswer": {"@type": "Answer", "text": "Flutter renders its own UI at native speed. With careful design it feels at home on both platforms."}}]}]}</script>
+</head>
+<body data-page="post" data-bot-hello="Grab a coffee — I&#x27;ll keep my place on the headings while you read.">
+  <!-- @include chrome.html -->
+
+  <main id="main">
+    <div class="progress" aria-hidden="true"><i data-read-bar></i></div>
+    <article class="post post--rich">
+      <header class="post__head">
+        <nav class="crumbs mono" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span><span aria-current="page">Engineering</span></nav>
+        <p class="eyebrow mono" data-up><span class="pill-dot"></span>Engineering · 5 min read · 15 Nov 2026</p>
+        <h1 class="post__h" data-h1>Why we build startup apps in Flutter (and when we don&#x27;t)</h1>
+        <p class="post__lede" data-up>One codebase, two app stores, native speed. How Flutter helps startups launch faster on Android and iOS — and the cases where we pick something else.</p>
+        <div class="post__by" data-up><span class="post__av"><img src="/img/founders/sayan_park.webp" alt="" /><img src="/img/founders/souvik_office.webp" alt="" /></span><span>By <a href="https://www.sayanthecoder.in/" target="_blank" rel="noopener author">Sayan Mondal</a> &amp; <a href="https://souvikthecoder.in/" target="_blank" rel="noopener author">Souvik</a></span></div>
+      </header>
+      <figure class="post__media" data-post-media><img src="/img/blog/why-we-build-startup-apps-in-flutter.webp" alt="" /></figure>
+      <div class="post__layout">
+        <aside class="post__toc" data-toc>
+          <div class="toc__ring"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" pathLength="100"/><circle class="toc__arc" cx="22" cy="22" r="19" pathLength="100" data-toc-arc/></svg><span class="mono" data-toc-left>5 min</span></div>
+          <p class="mono toc__k">On this page</p>
+          <ol><li><a href="#one-codebase-two-stores">One codebase, two stores</a></li><li><a href="#fast-enough-for-real-products">Fast enough for real products</a></li><li><a href="#when-we-pick-something-else">When we pick something else</a></li><li><a href="#what-it-means-for-your-budget">What it means for your budget</a></li><li><a href="#faq">FAQ</a></li></ol>
+          <div class="toc__share mono"><span>Share</span><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//shotlin.in/blog/why-we-build-startup-apps-in-flutter/" target="_blank" rel="noopener">in</a><a href="https://x.com/intent/post?url=https%3A//shotlin.in/blog/why-we-build-startup-apps-in-flutter/&amp;text=Why%20we%20build%20startup%20apps%20in%20Flutter%20%28and%20when%20we%20don%27t%29" target="_blank" rel="noopener">X</a><a href="https://wa.me/?text=Why%20we%20build%20startup%20apps%20in%20Flutter%20%28and%20when%20we%20don%27t%29%20https%3A//shotlin.in/blog/why-we-build-startup-apps-in-flutter/" target="_blank" rel="noopener">WA</a></div>
+        </aside>
+        <div class="post__body" data-post-body>
+          <section class="takeaways" aria-label="Key takeaways"><p class="mono">Key takeaways</p><ul><li>One Flutter codebase ships to Android and iOS, so features stay in sync.</li><li>Flutter compiles to native code — smooth enough for maps, payments and live tracking.</li><li>We choose web, native or a game engine when a project genuinely needs it.</li><li>Shared code usually means less to build, test and maintain.</li></ul></section>
+<p>Bakaloo, FreshCart, LNDRY and Dealker all run on Flutter. That's not loyalty to a framework — it's what consistently gets startups to both app stores fastest. Here's our reasoning, and the cases where we pick something else. (See them in <a href="/custom/">our projects</a>.)</p>
+<h2 id="one-codebase-two-stores">One codebase, two stores</h2>
+<p>A single Flutter codebase ships to Android and iOS. Features land on both platforms at the same time, bugs get fixed once, and one team owns the whole app instead of two teams drifting apart.</p>
+<h2 id="fast-enough-for-real-products">Fast enough for real products</h2>
+<p>Flutter compiles to native machine code and draws its own interface, so scrolling, animations and screens full of products stay smooth — including live maps, payments and order tracking.</p>
+<h2 id="when-we-pick-something-else">When we pick something else</h2>
+<ul><li>A web app or PWA, when the product lives in a browser or needs no store presence.</li><li>Fully native code, when a project depends on a platform SDK Flutter can&#x27;t reach well.</li><li>Unity or Godot, for games — which is how we built Rustbloom.</li></ul>
+<h2 id="what-it-means-for-your-budget">What it means for your budget</h2>
+<p>Fewer duplicated screens, one QA pass per feature and a shared design system. For most startups that means less to build now and less to maintain later.</p>
+<aside class="post__cta"><p>Planning an Android and iOS app? Tell us about it — we&#x27;ll suggest the right stack in the first call.</p><a class="btn btn--light btn--sm magnetic" href="/contact/" data-open-brief><span>Start a project</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></aside>
+
+          <section class="post__faq" id="faq"><h2>Frequently asked questions</h2><details class="qa"><summary>Is Flutter good for startups?<i></i></summary><div class="qa__a"><p>For most product apps, yes. One codebase for Android and iOS speeds up launch and keeps maintenance lean.</p></div></details><details class="qa"><summary>Can a Flutter app handle payments, maps and push notifications?<i></i></summary><div class="qa__a"><p>Yes. Our Flutter apps use UPI and card payments, live maps, push notifications and WhatsApp integrations.</p></div></details><details class="qa"><summary>Will a Flutter app feel native?<i></i></summary><div class="qa__a"><p>Flutter renders its own UI at native speed. With careful design it feels at home on both platforms.</p></div></details></section>
+        </div>
+      </div>
+      <footer class="post__foot">
+        <div class="author"><span class="post__av post__av--lg"><img src="/img/founders/sayan_park.webp" alt="Sayan Mondal" /><img src="/img/founders/souvik_office.webp" alt="Souvik" /></span>
+          <div><p class="mono">Written by the founders</p><p><a href="https://www.sayanthecoder.in/" target="_blank" rel="noopener">Sayan Mondal</a> (founder, engineering &amp; cloud) and <a href="https://souvikthecoder.in/" target="_blank" rel="noopener">Souvik</a> (co-founder, COO &amp; chief engineer) have shipped 150+ products across apps, SaaS, AI and infrastructure. They also run <a href="https://www.opslin.com/" target="_blank" rel="noopener">Opslin</a>.</p></div></div>
+        <a class="nextpost" href="/blog/grocery-delivery-app-launch-checklist/"><span class="mono">Next article</span><b>Launching a grocery delivery app in India: the complete checklist</b><i>→</i></a>
+        <div class="related"><p class="mono kicker">Keep reading</p><div class="related__row"><a class="rel" href="/blog/launch-kit-vs-custom-build/" data-cursor="Read"><span class="rel__img"><img src="/img/blog/launch-kit-vs-custom-build.webp" alt="" loading="lazy" /></span><span class="mono">Strategy · 4 min</span><b>Launch kit vs custom build: which is right for your startup?</b></a><a class="rel" href="/blog/what-decides-app-development-cost/" data-cursor="Read"><span class="rel__img"><img src="/img/blog/what-decides-app-development-cost.webp" alt="" loading="lazy" /></span><span class="mono">Pricing · 5 min</span><b>What really decides the cost of building an app in India</b></a><a class="rel" href="/blog/own-your-servers/" data-cursor="Read"><span class="rel__img"><img src="/img/blog/own-your-servers.webp" alt="" loading="lazy" /></span><span class="mono">Cloud · 4 min</span><b>Why we deploy every client product on servers they own</b></a></div></div>
+      </footer>
+    </article>
+
+    <!-- @include cta.html -->
+  </main>
+
+  <!-- @include footer.html -->
+</body>
+</html>

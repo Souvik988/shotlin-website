@@ -1,0 +1,78 @@
+/* =========================================================
+   MOBILE PARITY — the same pinned motion as desktop, re-laid out for phones.
+   Loaded last; overrides the older "stack it on mobile" fallbacks.
+   ========================================================= */
+@media (max-width: 860px) {
+  /* services switcher: pinned, chips on top, stage below */
+  .svc__pin { min-height: 100svh; padding: 78px 16px 18px; display: flex; flex-direction: column; gap: 14px; }
+  .svc__h { font-size: 30px; margin: 0 0 4px; }
+  .svc__side .kicker { margin-bottom: 8px; }
+  .svc__side .svc__list { display: flex; flex-wrap: wrap; gap: 6px; }
+  .svc__list li { font-size: 13px; padding: 7px 12px; border-radius: 99px; border: 1px solid var(--line-2); color: var(--muted); gap: 6px; transform: none !important; }
+  .svc__list li .mono { display: none; }
+  .svc__list li.is-on { color: var(--lime); background: var(--ink); border-color: var(--ink); padding: 7px 12px; transform: none; }
+  .svc__progress { display: none; }
+  .svc__stage { position: relative; display: block; flex: 1 1 auto; width: 100%; align-self: stretch; height: auto; min-height: 52svh; }
+  .svc__pin { align-items: stretch; }
+  .case__cta { font-size: 12.5px; padding: 9px 13px; }
+  .case__links { gap: 6px 12px; }
+  .scene { position: absolute; inset: 0; min-height: 0; }
+  .scene__cap { padding: 0 18px 16px; font-size: 13.5px; }
+  .scene .phone { width: 30%; }
+  .s-br, .s-br2, .s-br4 { left: 5%; right: 5%; }
+  .s-br3 { left: 30%; right: 3%; top: 48%; }
+  .kpi { min-width: 0; padding: 10px 12px; } .kpi b { font-size: 28px; }
+  .chat { top: 5%; width: 90%; gap: 6px; padding: 12px; } .bub { font-size: 12.5px; padding: 8px 11px; }
+  .term { left: 4%; right: 4%; top: 8%; }
+
+  /* work reel: horizontal on phones too */
+  .work__pin { height: 100svh; display: flex; align-items: center; padding: 0; }
+  .work__track { flex-direction: row; gap: 14px; padding: 0 16px; }
+  .case { width: 86vw; height: min(78svh, 680px); grid-template-columns: 1fr; grid-template-rows: auto 1fr; padding: 20px; gap: 10px; }
+  .case__info { gap: 8px; }
+  .case__title { font-size: 26px; }
+  .case__desc, .case .chips { display: none; }
+  .case__visual { min-height: 0; }
+  .case--end { width: 80vw; height: min(60svh, 480px); }
+  .work__progress { display: flex; }
+
+  /* film-reel process: horizontal on phones too */
+  .flow .flow__pin { height: 100svh; overflow: hidden; display: block; }
+  .flow__track { flex-direction: row; width: max-content; height: 100%; align-items: center; padding: 0 16px; gap: 12px; }
+  .fp { width: 84vw; height: min(74svh, 620px); min-height: 0; grid-template-columns: 1fr; grid-template-rows: auto 1fr auto auto; padding: 26px 22px; }
+  .fp__vis { grid-column: 1; grid-row: 1; max-width: 200px; }
+  .flow .flow__word { grid-row: 2; align-self: end; font-size: 58px; }
+  .fp p { font-size: 15px; margin-top: 12px; }
+
+  /* launch kits: sticky stacking on phones too */
+  .kit { position: sticky; top: 72px; grid-template-columns: 1fr; min-height: 0; }
+  .kit__vis { min-height: 300px; }
+
+  /* kit gallery: pinned sideways scroll on phones too */
+  .gal { min-height: 100svh; }
+  .gal__track { width: max-content; overflow: visible; scroll-snap-type: none; padding-bottom: 0; }
+
+  /* about: folder-tab rules stay pinned and stacked */
+  .rules__pin { min-height: 100svh; padding: 80px 16px 20px; gap: 18px; }
+  .rules__stack { height: 64svh; display: block; }
+  .rule { position: absolute; height: 52svh; }
+  .rule__tab { height: 60px; padding: 0 18px; }
+  .rule__big { font-size: 26px; }
+  .rule__body { padding: 20px 18px; }
+}
+
+/* hard-shadow-free kit/rule dimming overlay (scrubbed via --dim) */
+.kit, .rule { position: relative; }
+.kit::after, .rule::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: #07060f; opacity: var(--dim, 0); pointer-events: none; z-index: 5; }
+@media (min-width: 861px) { .kit { position: sticky; } .rule { position: absolute; } }
+@media (max-width: 860px) { .kit { position: sticky; } .rule { position: absolute; } }
+
+/* ---- perf: no live backdrop blur on elements that move while scrolling ---- */
+.forge__code { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; background: rgba(14,14,22,.97); }
+.forge__push, .forge__notes span, .rc figcaption, .pcard__el, .story__chips li { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+.forge__notes span:not([data-notes-ui] span) { background: rgba(20,22,40,.85); }
+.phone__dev { will-change: auto; }
+
+/* never let off-screen animation start states widen the page (mobile layout viewport) */
+html, body { overflow-x: clip; }
+main, .footer { overflow-x: clip; }

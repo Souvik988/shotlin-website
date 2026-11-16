@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- @include head.html -->
+  <title>Why we deploy every client product on servers they own | Shotlin Blog</title>
+  <meta name="description" content="Vendor lock-in is a silent tax on startups. Here&#x27;s why every Shotlin product ships on infrastructure in the client&#x27;s name — and how Opslin makes it easy." />
+  <link rel="canonical" href="https://shotlin.in/blog/own-your-servers/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://shotlin.in/blog/own-your-servers/" />
+  <meta property="og:title" content="Why we deploy every client product on servers they own | Shotlin Blog" />
+  <meta property="og:description" content="Vendor lock-in is a silent tax on startups. Here&#x27;s why every Shotlin product ships on infrastructure in the client&#x27;s name — and how Opslin makes it easy." />
+  <meta property="og:image" content="https://shotlin.in/img/blog/own-your-servers.webp" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://shotlin.in/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://shotlin.in/blog/"}, {"@type": "ListItem", "position": 3, "name": "Own Your Servers", "item": "https://shotlin.in/blog/own-your-servers/"}]}, {"@type": "BlogPosting", "headline": "Why we deploy every client product on servers they own", "description": "Vendor lock-in is a silent tax on startups. Here's why every Shotlin product ships on infrastructure in the client's name — and how Opslin makes it easy.", "image": "https://shotlin.in/img/blog/own-your-servers.webp", "datePublished": "2026-11-15", "dateModified": "2026-11-15", "author": [{"@type": "Person", "name": "Sayan Mondal", "url": "https://www.sayanthecoder.in/"}, {"@type": "Person", "name": "Souvik", "url": "https://souvikthecoder.in/"}], "publisher": {"@type": "Organization", "name": "Shotlin", "url": "https://shotlin.in/", "logo": {"@type": "ImageObject", "url": "https://shotlin.in/favicon.svg"}}, "mainEntityOfPage": "https://shotlin.in/blog/own-your-servers/", "articleSection": "Cloud", "keywords": "Cloud"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why should I own my servers?", "acceptedAnswer": {"@type": "Answer", "text": "So you never depend on an agency's account — switching teams or scaling stays simple."}}, {"@type": "Question", "name": "What is Opslin?", "acceptedAnswer": {"@type": "Answer", "text": "Our deployment platform: connect a Linux VPS you own and go live in minutes, with SSL, databases, logs and one-click rollback."}}]}]}</script>
+</head>
+<body data-page="post" data-bot-hello="Grab a coffee — I&#x27;ll keep my place on the headings while you read.">
+  <!-- @include chrome.html -->
+
+  <main id="main">
+    <div class="progress" aria-hidden="true"><i data-read-bar></i></div>
+    <article class="post post--rich">
+      <header class="post__head">
+        <nav class="crumbs mono" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span><span aria-current="page">Cloud</span></nav>
+        <p class="eyebrow mono" data-up><span class="pill-dot"></span>Cloud · 4 min read · 15 Nov 2026</p>
+        <h1 class="post__h" data-h1>Why we deploy every client product on servers they own</h1>
+        <p class="post__lede" data-up>Vendor lock-in is a silent tax on startups. Here&#x27;s why every Shotlin product ships on infrastructure in the client&#x27;s name — and how Opslin makes it easy.</p>
+        <div class="post__by" data-up><span class="post__av"><img src="/img/founders/sayan_park.webp" alt="" /><img src="/img/founders/souvik_office.webp" alt="" /></span><span>By <a href="https://www.sayanthecoder.in/" target="_blank" rel="noopener author">Sayan Mondal</a> &amp; <a href="https://souvikthecoder.in/" target="_blank" rel="noopener author">Souvik</a></span></div>
+      </header>
+      <figure class="post__media" data-post-media><img src="/img/blog/own-your-servers.webp" alt="" /></figure>
+      <div class="post__layout">
+        <aside class="post__toc" data-toc>
+          <div class="toc__ring"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" pathLength="100"/><circle class="toc__arc" cx="22" cy="22" r="19" pathLength="100" data-toc-arc/></svg><span class="mono" data-toc-left>4 min</span></div>
+          <p class="mono toc__k">On this page</p>
+          <ol><li><a href="#our-rule-you-own-the-stack">Our rule: you own the stack</a></li><li><a href="#making-self-hosting-painless">Making self-hosting painless</a></li><li><a href="#faq">FAQ</a></li></ol>
+          <div class="toc__share mono"><span>Share</span><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A//shotlin.in/blog/own-your-servers/" target="_blank" rel="noopener">in</a><a href="https://x.com/intent/post?url=https%3A//shotlin.in/blog/own-your-servers/&amp;text=Why%20we%20deploy%20every%20client%20product%20on%20servers%20they%20own" target="_blank" rel="noopener">X</a><a href="https://wa.me/?text=Why%20we%20deploy%20every%20client%20product%20on%20servers%20they%20own%20https%3A//shotlin.in/blog/own-your-servers/" target="_blank" rel="noopener">WA</a></div>
+        </aside>
+        <div class="post__body" data-post-body>
+          <section class="takeaways" aria-label="Key takeaways"><p class="mono">Key takeaways</p><ul><li>Your code, domains, store listings and servers should be in your name.</li><li>Opslin makes self-hosting on your own VPS simple.</li><li>Owning the stack means predictable costs and no lock-in.</li></ul></section>
+<p>Too many startups discover — at the worst possible moment — that their app lives on an agency&#x27;s account. Changing developers then means migrating everything.</p>
+<h2 id="our-rule-you-own-the-stack">Our rule: you own the stack</h2>
+<p>Code repositories, app store listings, domains and servers are created in your name from day one. We get access; you keep control.</p>
+<h2 id="making-self-hosting-painless">Making self-hosting painless</h2>
+<p>Owning a VPS used to mean owning its problems. That's why we built <a href="https://www.opslin.com/" target="_blank" rel="noopener">Opslin</a>: connect a Linux server you own and go live in about five minutes, with domains, SSL, databases, logs, monitoring and one-click rollback.</p>
+<ul><li>Git push to a health-checked release.</li><li>An outbound-only agent, so no inbound ports to expose.</li><li>PostgreSQL, MySQL, MongoDB and Redis managed from one place.</li></ul>
+<p>The result: predictable costs, no lock-in, and an exit door you never have to use.</p>
+<aside class="post__cta"><p>Curious about Opslin? Start the free beta at opslin.com, or ask us how we&#x27;d host your product.</p><a class="btn btn--light btn--sm magnetic" href="/contact/" data-open-brief><span>Start a project</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></aside>
+
+          <section class="post__faq" id="faq"><h2>Frequently asked questions</h2><details class="qa"><summary>Why should I own my servers?<i></i></summary><div class="qa__a"><p>So you never depend on an agency&#x27;s account — switching teams or scaling stays simple.</p></div></details><details class="qa"><summary>What is Opslin?<i></i></summary><div class="qa__a"><p>Our deployment platform: connect a Linux VPS you own and go live in minutes, with SSL, databases, logs and one-click rollback.</p></div></details></section>
+        </div>
+      </div>
+      <footer class="post__foot">
+        <div class="author"><span class="post__av post__av--lg"><img src="/img/founders/sayan_park.webp" alt="Sayan Mondal" /><img src="/img/founders/souvik_office.webp" alt="Souvik" /></span>
+          <div><p class="mono">Written by the founders</p><p><a href="https://www.sayanthecoder.in/" target="_blank" rel="noopener">Sayan Mondal</a> (founder, engineering &amp; cloud) and <a href="https://souvikthecoder.in/" target="_blank" rel="noopener">Souvik</a> (co-founder, COO &amp; chief engineer) have shipped 150+ products across apps, SaaS, AI and infrastructure. They also run <a href="https://www.opslin.com/" target="_blank" rel="noopener">Opslin</a>.</p></div></div>
+        <a class="nextpost" href="/blog/why-we-build-startup-apps-in-flutter/"><span class="mono">Next article</span><b>Why we build startup apps in Flutter (and when we don&#x27;t)</b><i>→</i></a>
+        <div class="related"><p class="mono kicker">Keep reading</p><div class="related__row"><a class="rel" href="/blog/launch-kit-vs-custom-build/" data-cursor="Read"><span class="rel__img"><img src="/img/blog/launch-kit-vs-custom-build.webp" alt="" loading="lazy" /></span><span class="mono">Strategy · 4 min</span><b>Launch kit vs custom build: which is right for your startup?</b></a><a class="rel" href="/blog/what-decides-app-development-cost/" data-cursor="Read"><span class="rel__img"><img src="/img/blog/what-decides-app-development-cost.webp" alt="" loading="lazy" /></span><span class="mono">Pricing · 5 min</span><b>What really decides the cost of building an app in India</b></a><a class="rel" href="/blog/why-we-build-startup-apps-in-flutter/" data-cursor="Read"><span class="rel__img"><img src="/img/blog/why-we-build-startup-apps-in-flutter.webp" alt="" loading="lazy" /></span><span class="mono">Engineering · 5 min</span><b>Why we build startup apps in Flutter (and when we don&#x27;t)</b></a></div></div>
+      </footer>
+    </article>
+
+    <!-- @include cta.html -->
+  </main>
+
+  <!-- @include footer.html -->
+</body>
+</html>

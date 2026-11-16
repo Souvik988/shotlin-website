@@ -1,0 +1,23 @@
+# Local creative inputs and development tools
+/_assets/
+/_tools/
+/.claude/
+
+# Dependencies, builds and local deployment state
+node_modules/
+dist/
+.vercel/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db
+
+# Local credentials and editor settings
+.env
+.env.*
+!.env.example
+!.env.sample
+.npmrc
+.vscode/
+.idea/
